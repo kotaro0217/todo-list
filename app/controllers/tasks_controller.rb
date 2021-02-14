@@ -30,5 +30,4 @@ class TasksController < ApplicationController
       render :edit
     end
   end
-
 end
