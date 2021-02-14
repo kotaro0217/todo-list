@@ -1,0 +1,5 @@
+<h2>タスク管理</h2>
+<%= form_with url: tasks_path, method: :post, local: true do |f| %>
+    <p><%= f.text_field :text,class:"form-control" %></p>
+    <p><%= f.submit "保存",class: "btn btn-outline-primary" %></p>
+    <% end %>

@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  resources :memos, only:[:index, :new]
+  root to: "tasks#index"
+  resources :tasks, only: [:index, :new, :create, :destroy, :edit, :update]
 end
